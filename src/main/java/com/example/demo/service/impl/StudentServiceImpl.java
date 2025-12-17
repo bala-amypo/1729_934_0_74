@@ -13,6 +13,13 @@ public class StudentServiceImpl implements StudentService{
     StudentRepo stRepo;
     
     @Override
-    
+    public Student insertStudent(Student st){
+        return stRepo.save(st);
+    }
+
+    @Override
+    public Student getAllStudents(Student st){
+        return stRepo.
+    }
 
 }
