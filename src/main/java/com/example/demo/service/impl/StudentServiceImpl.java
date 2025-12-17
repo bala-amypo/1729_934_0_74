@@ -8,7 +8,7 @@ import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
     @Autowired
     StudentRepo stRepo;
     
@@ -29,7 +29,7 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void deleteStudent(Long id){
-        stRepo.deleteById(st);
+        stRepo.deleteById(id);
     }
 
 }
