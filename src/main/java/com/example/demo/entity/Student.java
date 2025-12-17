@@ -1,10 +1,10 @@
 package com.example.demo.Entity;
-
-
+package com.example.demo.entity;
 import java.time.LocalDate;
-
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlID;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 
