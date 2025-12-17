@@ -18,8 +18,18 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public Student getAllStudents(Student st){
-        return stRepo.
+    public List<Student> getAllStudents(){
+        return stRepo.findAll();
+    }
+
+    @Override
+    public List<Student> getOneStudent(Student st){
+        return stRepo.findById(st);
+    }
+
+    @Override
+    public Student deleteStudent(Student st){
+        return stRepo.deleteById(st);
     }
 
 }
