@@ -1,12 +1,12 @@
+package com.example.demo.service;
+import java.util.List;
+import java.util.Optional;
+import com.example.demo.entity.Student;
 
 
-
-
-
-
-
-
-@RestController
-public class StudentController{
-    
-} 
+public interface StudentService{
+    Student insertStudent(Student st);
+    List<Student>getAllStudents();
+    Optional<Student>getOneStudent(Long id);
+    void deleteStudent(Long id);   //we are just deleting and not retrieving the data 
+}
